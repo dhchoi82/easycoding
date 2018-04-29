@@ -1,0 +1,8 @@
+<p>
+    간단한 Python 프로그램 예제 하나를 살펴보겠습니다. 소스코드는 아래와 같습니다.
+</p>
+<pre><code>print("Hello, world!")</code></pre>
+<p>
+    위 프로그램을 실행해보면 아래와 같이 "Hello, world!"가 화면에 출력됩니다.
+</p>
+<pre>Hello, world!</pre>

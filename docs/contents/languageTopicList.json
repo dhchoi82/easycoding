@@ -1,0 +1,26 @@
+[
+    {"lang":"Python", "topics":[
+        {"title":"Hello, world!","file":"contents/python/01_hello"},
+        {"title":"Comment (주석문)","file":"contents/python/02_comment"},
+        {"title":"Simple Arithmetic (간단한 숫자 계산)","file":"contents/python/03_numberCalculation"},
+        {"title":"String & Formatting (문자와 문자열 구성)","file":"contents/python/04_string"}
+    ]},
+    {"lang":"HTML", "topics":[
+        
+    ]},
+    {"lang":"Javascript", "topics":[
+        
+    ]},
+    {"lang":"PHP", "topics":[
+        
+    ]},
+    {"lang":"C", "topics":[
+        
+    ]},
+    {"lang":"Java", "topics":[
+        
+    ]},
+    {"lang":"R", "topics":[
+        
+    ]}
+]
