@@ -1,4 +1,4 @@
-# EasyCoding
+# ShallowCoding
 컴퓨터 언어의 기본 문법 설명서를 만들어보고 있습니다.
 
 ## 디렉토리 구조
