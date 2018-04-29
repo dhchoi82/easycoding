@@ -4,6 +4,8 @@
 var libraryObj = {
     // navigation 정보를 저장하는 객체
     'navigationData': null,
+    // 'to home' 그림파일 html
+    'homeNavImg': '<img src="contents/home.png" alt="To Home" title="Home">',
     /**
      * AJAX로 다른 파일에서 문자열을 불러와 처리하는 함수
      */
@@ -17,9 +19,15 @@ var libraryObj = {
     /**
      * navigation html 갱신 함수
      */
-    'makeNavHtml': function(domId,listType,listObj,params,textElement,onClickEventName){
-        // 삽입할 html 문자열 변수 선언
-        var htmlInsert = '';
+    'makeNavHtml': function(domId,isTop,listObj,params,textElement,onClickEventName){
+        if(isTop==true){
+            var listType = 'ul';
+            // 삽입할 html 문자열 변수 선언 및 'to home' 항목 설정
+            var htmlInsert = '<li onclick="' + onClickEventName + '(\'\')">' + libraryObj['homeNavImg'] + '</li>';
+        } else {
+            var listType = 'ol';
+            var htmlInsert = '';
+        }
         
         for(var i=0; i<listObj.length; i++){
             // 이벤트 처리 함수의 매개변수 문자열 선언
@@ -62,7 +70,7 @@ libraryObj.doAjax('contents/languageTopicList.json',function(jsonText){
         libraryObj.navigationData = JSON.parse(jsonText);
         
         // 화면 상단 navigation html 문자열을 html 문서에 삽입
-        libraryObj.makeNavHtml('topNavigationBar','ul',libraryObj.navigationData,['lang'],'lang','topNavEvent');
+        libraryObj.makeNavHtml('topNavigationBar',true,libraryObj.navigationData,['lang'],'lang','topNavEvent');
 });
 
 /** 
@@ -71,6 +79,9 @@ libraryObj.doAjax('contents/languageTopicList.json',function(jsonText){
  * 본문과 화면 좌측 navigation 항목을 갱신한다.
  */
 function topNavEvent(languageName){
+    // 입력 인자가 길이가 0인 문자일 경우 'to home' 동작
+    if(languageName.length==0) location.reload();
+    
     // 본문 제목 갱신
     libraryObj.setContentHeader(languageName,'');
     
@@ -90,7 +101,7 @@ function topNavEvent(languageName){
     }
     
     // 화면 좌측 navigation 갱신
-    libraryObj.makeNavHtml('leftNavigationList','ol',topics,['file','title'],'title','leftNavEvent');
+    libraryObj.makeNavHtml('leftNavigationList',false,topics,['file','title'],'title','leftNavEvent');
 }
 
 /** 

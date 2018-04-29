@@ -41,6 +41,7 @@ h1 a{
     margin: 0px;
     border: 1px solid white;
     padding: 5px 20px;
+    height:24px;
     color: #ab934b;
     font-weight: bold;
 }
@@ -100,4 +101,11 @@ h2{
 
 h3{
     color: #2973abd6;
+}
+
+iframe{
+    border: 0px;
+    width: 100%;
+    min-width: 300px;
+    min-height: 400px;
 }
