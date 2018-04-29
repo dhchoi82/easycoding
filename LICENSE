@@ -1,4 +1,9 @@
-SallowCodding의 모든 부분에서 소스코드에 별도로 언급된 곳을 제외한 나머지 부분은 MIT License를 따릅니다. 저작권 정책이 별도로 언급되는 곳에는 '--!LICENSE NOTICE--' 문구가 소스코드에 삽입됩니다. (A translation to English: Every part of SallowCoding except some part which have the other license statement in the source code follows MIT License. In the source code of license exception part, there is the phrase, '--!LICENSE NOTICE--'.)
+SallowCodding의 모든 부분에서 소스코드에 별도로 언급된 곳을 제외한 나머지 부분은
+MIT License를 따릅니다. 저작권 정책이 별도로 언급되는 곳에는 '--!LICENSE NOTICE--'
+문구가 소스코드에 삽입됩니다. (A translation to English: Every part
+of SallowCoding except some part which have the other license statement
+in the source code follows MIT License. In the source code of license
+exception part, there is the phrase, '--!LICENSE NOTICE--'.)
 
 MIT License
 
