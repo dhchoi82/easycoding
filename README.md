@@ -4,9 +4,8 @@
 ## 디렉토리 구조
 ```
 root
-    └─  mds : 설명서 MD 문서
-    └─  src : 예제 소스코드
-    └─  tools : web page 관리 도구
+    └─ src : 예제 소스코드
+    └─ tools : web page 관리 도구
     └─ docs : 설명서 web page
         └─ css
         └─ javascript
