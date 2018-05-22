@@ -1,0 +1,44 @@
+<h4>Line Comment</h4>
+<p>
+    Python의 소스코드에는 아래와 같이 '#'을 이용해서 실행되지 않는 구문을 넣을 수 있습니다. 이런 구문을 주석문이라고 합니다.
+</p>
+<pre><code>#!/usr/bin/python3
+#야ㅏ,ㄷasdoidflk
+print("Hello, world!") #ㅁㄴ;djsdjkflkjsd
+#print("Hell, low!!")
+</code></pre>
+<p>
+    실행해보면 아래와 같이 'Hello, world!'만 화면에 출력되고 '#' 이후에 적힌 구문에 의한 다른 동작은 일어나지 않습니다.
+</p>
+<pre>
+Hello, world!
+</pre>
+
+<h4>Lines of Comment</h4>
+<p>
+    아래와 같이 """..."""나 '''...'''를 이용해서 여러 줄의 주석문을 넣을 수도 있습니다.
+</p>
+<pre><code>#!/usr/bin/python3
+#1
+#2
+'''3
+4
+5
+6'''
+print("Hello, world!") #ㅁㄴ;djsdjkflkjsd
+"""print("Hell, low!!")
+print("흠...")
+"""
+</code></pre>
+<p>
+    실행해보면 아래와 같이 'Hello, world!'만 화면에 출력되고 '#' 이후에 적힌 구문이나 """...""", '''...''' 구문에 의한 다른 동작은 일어나지 않습니다.
+</p>
+<pre>
+Hello, world!
+</pre>
+
+<h4>Shebang Lines</h4>
+<p>
+    '#!/usr/bin/python3' 구문과 같이 '#!'로 시작하는 구문은 일반적인 주석문과는 달리 Linux나 Unix 같은 운영체제에서 특별한 의미를 가지고 있습니다. 이런 구문을 'shebang'이라고 합니다.
+</p>
+참고: <a href="https://docs.python.org/3/using/windows.html#shebang-lines" target="_blank">Python 공식 문서 Shebang Lines 설명</a>

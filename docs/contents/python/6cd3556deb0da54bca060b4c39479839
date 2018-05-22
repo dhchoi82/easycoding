@@ -1,8 +1,45 @@
+<h4>Simple Hello</h4>
 <p>
     간단한 Python 프로그램 예제 하나를 살펴보겠습니다. 소스코드는 아래와 같습니다.
 </p>
-<pre><code>print("Hello, world!")</code></pre>
+<pre><code>#!/usr/bin/python3
+print("Hello, world!")
+</code></pre>
 <p>
-    위 프로그램을 실행해보면 아래와 같이 "Hello, world!"가 화면에 출력됩니다.
+    위 프로그램을 실행해보면 아래와 같이 'Hello, world!'가 화면에 출력됩니다.
 </p>
-<pre>Hello, world!</pre>
+<pre>
+Hello, world!
+</pre>
+
+<h4>Another Hello</h4>
+<p>
+    아래와 같이 소스코드에 'Hello, world!' 대신 다른 문장을 넣으면,
+</p>
+<pre><code>#!/usr/bin/python3
+print("안녕하세요?")
+</code></pre>
+<p>
+    아래와 같이 바뀐 문장이 화면에 출력됩니다.
+</p>
+<pre>
+안녕하세요?
+</pre>
+
+<h4>Some lines of Hello</h4>
+<p>
+    아래와 같이 소스코드에 여러 구문을 적으면,
+</p>
+<pre><code>#!/usr/bin/python3
+print("Hello!")
+print("안녕하세요?")
+print("Bye!")
+</code></pre>
+<p>
+    아래와 같이 각 구문이 순서대로 실행됩니다.
+</p>
+<pre>
+Hello!
+안녕하세요?
+Bye!
+</pre>
