@@ -22,7 +22,7 @@ def setJsonFile(variable):
 from sqlite3 import connect
 from hashlib import md5
 
-with connect('../src/easycoding.sqlite') as conn:
+with connect('../src/shallowcoding.sqlite') as conn:
     jsonVar = [] # JSON 문자로 변환될 변수 원형 선언
     
     cur = conn.cursor()
