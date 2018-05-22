@@ -53,12 +53,12 @@ print(type(3)) # 소숫점이 없는 숫자의 type
 2.5
 2.0
 1.0
-9.0ㅎ
+9.0
 &lt;class 'float'&gt;
 &lt;class 'int'&gt;
 </pre>
 
-<h4>Complex number</h4>
+<h4>Complex Number</h4>
 <p>
     Python에서는 허수단위 j를 이용해서 복소수를 사용할 수 있습니다.
 </p>
